@@ -1,14 +1,5 @@
-print("Exercise 3")
+print("Exercise 4")
 
-volt1 = int(input("Ingrese el primer voltaje: "))
-volt2 = int(input("Ingrese el segundo voltaje: "))
-volt3 = int(input("Ingrese el tercer voltaje: "))
-promedio = round((volt1+volt2+volt3)/3)
-if promedio < 115:
-    print("VOLTAJE CORRECTO")
-elif promedio > 115 and promedio < 220:
-    print("ALTO VOLTAJE")
-else:
-    print("PELIGRO")
-
-print(f"El promedio es: {promedio}")
+m = int(input("Ingrese el valor en metros: "))
+km = round(m/1000)
+print(f"{m} metros son {km} kilometros")
