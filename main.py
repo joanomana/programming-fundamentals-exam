@@ -1,10 +1,14 @@
-print("Exercise 2")
+print("Exercise 3")
 
-import math
-a = int(input("Ingrese el lado para calcular el area de un triangulo equilatero: "))
-area = ((math.sqrt(3)/4)*math.pow(a,2))
-if area > 1000:
-    print("DATOS NO VALIDOS")
+volt1 = int(input("Ingrese el primer voltaje: "))
+volt2 = int(input("Ingrese el segundo voltaje: "))
+volt3 = int(input("Ingrese el tercer voltaje: "))
+promedio = round((volt1+volt2+volt3)/3)
+if promedio < 115:
+    print("VOLTAJE CORRECTO")
+elif promedio > 115 and promedio < 220:
+    print("ALTO VOLTAJE")
 else:
-    print(f"EL AREA DEL TRIANGULO EQUILATERO ES {area}")
+    print("PELIGRO")
 
+print(f"El promedio es: {promedio}")
