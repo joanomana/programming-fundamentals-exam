@@ -1,11 +1,10 @@
-print("Exercise 1")
-volt1 = int(input("Enter the voltage: "))
-volt2 = int(input("Enter the voltage: "))
-volt3 = int(input("Enter the voltage: "))
-volt4 = int(input("Enter the voltage: "))
-volt5 = int(input("Enter the voltage: "))
-promedium = round((volt1 + volt2 + volt3 + volt4 + volt5) / 5)
-if promedium > 220: 
-    print("ALTO VOLTAJE")
+print("Exercise 2")
+
+import math
+a = int(input("Ingrese el lado para calcular el area de un triangulo equilatero: "))
+area = ((math.sqrt(3)/4)*math.pow(a,2))
+if area > 1000:
+    print("DATOS NO VALIDOS")
 else:
-    print("VOLTAJE CORRECTO")
+    print(f"EL AREA DEL TRIANGULO EQUILATERO ES {area}")
+
